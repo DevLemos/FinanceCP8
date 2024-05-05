@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <Link rel="stylesheet" href="style.css">
+    <title>FinanceCP8</title>
+</head>
+<body>
+
+<div id="container">
+    <div class="tab-buttons">
+        <button class="tab-btn active" content-id="home">
+            Home
+        </button>
+        <button class="tab-btn" content-id="list">
+            List
+        </button>
+        <button class="tab-btn" content-id="register">
+            Register
+        </button>
+    </div>
+
+    <div class="tab-contents">
+        <div class="content" id="home">
+            <img src="img/shopping.svg" class="content-img" alt="home image">
+
+            <form method="post" action="controleCliente?flag=cadastrar" id="form" class="scroll">
+
+                <div class="form-header">
+                    <div class="content-title">
+                        <h1>Cadastre-se</h1>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
+
+                <div class="form-control c">
+                    <label for="codigo"><strong>Código</strong></label>
+                    <input id="codigo" name="codigo" type="text"/>
+                </div>
+
+                <div class="form-control">
+                    <label for="firstname"><strong>Primeiro Nome:</strong></label>
+                    <input id="firstname" name="firstname" placeholder="Digite seu primeiro nome" type="text"/>
+                </div>
+
+                <div class="form-control">
+                    <label for="lastname"><strong>Sobrenome:</strong></label>
+                    <input id="lastname" name="lastname" placeholder="Digite seu sobrenome" type="text"/>
+                </div>
+
+                <div class="form-control">
+                    <label for="email"><strong>E-mail:</strong></label>
+                    <input id="email" name="email" placeholder="Digite seu e-mail" type="email"/>
+                </div>
+
+                <div class="form-control">
+                    <label for="number"><strong>Celular:</strong></label>
+                    <input id="number" name="number" placeholder="(xx) xxxx-xxxx" type="tel"/>
+                </div>
+
+                <div class="form-control">
+                    <label for="password"><strong>Senha:</strong></label>
+                    <input id="password" name="password" placeholder="Digite sua senha" type="password"/>
+                </div>
+
+                <div class="form-control">
+                    <label for="confirmPassword"><strong>Confirme sua Senha:</strong></label>
+                    <input id="confirmPassword" name="confirmPassword" placeholder="Digite sua senha novamente"
+                           type="password"/>
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero:</h6>
+                    </div>
+
+                    <div class="gender-group">
+
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a></button>
+                </div>
+
+            </form>
+
+
+        </div>
+
+        <div class="content" id="register">
+
+        </div>
+
+        <div class="content" id="list">
+            <img src="img/list.svg" class="content-img" alt="list image">
+            <div class="infos">
+                <h1 class="content-title">List</h1>
+
+                <p class="content-description">
+                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem
+                    sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os
+                    embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos,
+                    como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se
+                    popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e
+                    mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus
+                    PageMaker.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="javascript/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+}
+
+body{
+background: #40bef9;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+
+#container{
+background: #f0f8ff;
+width:80%;
+height: 80vh;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0px 15px 15px -4px rgba(0,0,0,0.1);
+}
+
+/**/
+.scroll{
+    overflow:auto;
+}
+
+/*Content*/
+.content {
+display: none;
+}
+
+.content.show{
+display:flex;
+gap: 14px;
+background-color: #dae1e6;
+border-radius: 0px 0px 9px 9px;
+padding: 16px;
+height: 72vh;
+}
+
+.content-img {
+width: 50%;
+height: 43vh;
+}
+
+/*content-tab*/
+.tab-buttons{
+display: flex;
+gap: 6px;
+}
+
+.tab-btn {
+width: 100%;
+border: none;
+color: #020617;
+background: #f0f8ff;
+border-radius: 8px 8px 0px 0px;
+font-weight: 500;
+padding: 8px;
+cursor: pointer;
+transition: background-color .3s ease;
+}
+
+.tab-btn.active {
+background: #dae1e6;
+}
+
+.tab-btn:hover{
+background-color: #c7cdd1;
+}
+
+/*content-form*/
+.form-header {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header {
+grid-column: 1 / -1;
+}
+
+.line {
+background-color: #40bef9;
+padding: 1.4px;
+width: 100px;
+}
+
+#form {
+padding: 30px 30px;
+margin: 20px 10px;
+width: 100%;
+height: 65vh;
+background: #fff;
+border-radius: 6px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+
+c{
+margin-bottom: 0px;
+padding-bottom: 0px;
+
+}
+
+.form-control {
+margin-bottom: 10px;
+padding-bottom: 20px;
+position: relative;
+}
+
+.form-control label {
+display: inline-block;
+margin-bottom: 5px;
+}
+
+.form-control input {
+border: 2px solid #f0f0f0;
+border-radius: 4px;
+display: block;
+font-size: 14px;
+padding: 10px;
+width: 100%;
+}
+
+/*Radio Container*/
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.gender-title h6 {
+    margin: 0;
+}
+
+.gender-inputs {
+grid-column: 1 / -1;
+}
+
+/*Botões*/
+
+.login-button button {
+background: #40bef9;
+padding: 0.4rem 1rem;;
+border: none;
+border-radius: 8px;
+width: 100px;
+cursor: pointer;
+}
+
+.login-button button a,
+.continue-button button a{
+ text-decoration: none;
+ font-weight: 500;
+ color: #fff;
+}
+
+.login-button button:hover,
+.continue-button button:hover{
+ background: #00ccff;
+}
+
+.continue-button button{
+background: #40bef9;
+padding: 0.4rem 1rem;;
+border-radius: 8px;
+cursor: pointer;
+border: none;
+width: 20rem;
+}
+
+.continue-button {
+margin-bottom: 4rem;
+display: flex;
+justify-content: center;
+}
+
+.continue-button  {
+grid-column: 1 / -1;
+}
